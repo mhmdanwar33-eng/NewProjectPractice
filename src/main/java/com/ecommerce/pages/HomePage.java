@@ -1,6 +1,5 @@
 package com.ecommerce.pages;
 
-//import com.ecommerce.utils.DriverFactory;
 import org.openqa.selenium.WebDriver;
 
 public class HomePage {

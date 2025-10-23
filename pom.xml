@@ -10,8 +10,10 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
+<!--        <maven.compiler.source>24</maven.compiler.source>-->
+<!--        <maven.compiler.target>24</maven.compiler.target>-->
+        <maven.compiler.release>21</maven.compiler.release>
+
     </properties>
 
     <dependencies>
@@ -20,10 +22,10 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.10.2</version>
-            <scope>test</scope>
-        </dependency>
+        <!--  <scope>test</scope> -->
+      </dependency>
 
-        <!-- Selenium -->
+      <!-- Selenium -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
@@ -65,12 +67,16 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.1.2</version>
                 <configuration>
-                    <includes>
-                        <include>**/AllTestsRunner.java</include>
-                    </includes>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+<!--                    <includes>-->
+<!--                        <include>**/AllTestsRunner.java</include>-->
+<!--                    </includes>-->
                     <systemPropertyVariables>
                         <headless>${headless}</headless>
                     </systemPropertyVariables>
+                    <reportsDirectory>target/test-output</reportsDirectory>
                 </configuration>
             </plugin>
         </plugins>

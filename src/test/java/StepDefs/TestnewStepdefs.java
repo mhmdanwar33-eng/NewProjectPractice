@@ -24,6 +24,6 @@ public class TestnewStepdefs {
 
     @Then("home page opened")
     public void homePageOpened() {
-        Assert.assertEquals(homePage.pageTitle(),"Online Shopping & Wholesale Marketplace in MENA | Tradeling");
+        Assert.assertEquals(homePage.pageTitle(),"Onnline Shopping & Wholesale Marketplace in MENA | Tradeling");
     }
 }
