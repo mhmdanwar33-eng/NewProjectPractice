@@ -1,10 +1,10 @@
+package StepDefs;
+
 import com.ecommerce.pages.HomePage;
 import com.ecommerce.utils.DriverFactory;
-import io.cucumber.java.PendingException;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
 public class TestnewStepdefs {
